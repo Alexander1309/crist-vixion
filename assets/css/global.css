@@ -1,0 +1,85 @@
+/* Bold */
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('../fonts/InriaSerif-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('../fonts/InriaSerif-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('../fonts/InriaSerif-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('../fonts/InriaSerif-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('../fonts/InriaSerif-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('../fonts/InriaSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+	--color-black: #000;
+	--color-yellow: #FFE04E;
+	--color-white: #fff;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Inria Serif', sans-serif;
+	font-weight: normal;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--color-black);
+	color: var(--color-white);
+	line-height: 1.6;
+	font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-yellow);
+  border-radius: 10px;
+}

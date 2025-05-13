@@ -1,0 +1,71 @@
+.services {
+	width: 100%;
+	padding: 0 61px;
+}
+
+.services__title {
+	font-family: 'Inria Serif', sans-serif;
+	font-style: italic;
+	font-size: 2rem;
+}
+
+.services__description {
+	width: 600px;
+	font-family: 'Inria Serif', sans-serif;
+	font-size: 1.2rem;
+	line-height: 25px;
+	margin-bottom: 35px;
+}
+
+.services__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+	place-items: center;
+}
+
+.grid-servicios__card--full {
+	grid-column: 1 / -1;
+}
+
+.services__card {
+	width: 160px;
+	height: 160px;
+	background-color: var(--color-white);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	gap: 15px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.services__card:hover {
+	transform: scale(1.05);
+	transform: rotate(-5deg);
+	background-color: transparent;
+	outline: 5px solid var(--color-white);
+}
+
+.services__card:hover .services__card--icon,
+.services__card:hover .services__card--text {
+	color: var(--color-white);	
+}
+
+.services__card--icon {
+	color: var(--color-black);
+	width: 80px;
+	height: 80px;
+	transition: all 0.3s ease;
+}
+
+.services__card--text {
+	color: var(--color-black);
+	font-family: 'Inria Serif', sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 20px;
+	transition: all 0.3s ease;
+}
