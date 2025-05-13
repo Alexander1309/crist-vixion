@@ -21,5 +21,3 @@ Bienvenido al repositorio del sitio web de **Crist Vixion**, una empresa especia
 - **Sección Nosotros**: Descripción de la empresa, misión, visión y fotos del personal
 - **Sección Servicios**: (pendiente o en desarrollo)
 - **Sección Contacto**: (pendiente o en desarrollo)
-
-## 🗂️ Estructura de carpetas recomendada
