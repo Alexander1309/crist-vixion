@@ -2,9 +2,9 @@
 
 Bienvenido al repositorio del sitio web de **Crist Vixion**, una empresa especializada en el bienestar visual dentro del entorno laboral. Este sitio presenta nuestros servicios, misión, visión, equipo de trabajo y medios de contacto de forma clara, visual y accesible.
 
-## 📸 Vista previa
+## 📸 Logo
 
-![Captura del sitio](./assets/preview.png)
+![Captura del sitio](./assets/img/logo.svg)
 
 ## 🧩 Tecnologías utilizadas
 
