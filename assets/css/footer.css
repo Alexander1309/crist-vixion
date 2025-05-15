@@ -1,0 +1,17 @@
+.footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 61px;
+}
+
+.footer__logo--img {
+	width: 150px;
+}
+
+.footer__credits {
+	font-family: 'Inria Serif', sans-serif;
+	font-size: 1.5rem;
+	color: var(--color-white);
+}
