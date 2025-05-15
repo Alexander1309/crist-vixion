@@ -1,12 +1,13 @@
 .services {
 	width: 100%;
 	padding: 0 61px;
+	margin: 100px 0;
 }
 
 .services__title {
 	font-family: 'Inria Serif', sans-serif;
 	font-style: italic;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 .services__description {
