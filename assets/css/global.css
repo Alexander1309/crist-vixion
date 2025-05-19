@@ -83,3 +83,30 @@ body {
   background: var(--color-yellow);
   border-radius: 10px;
 }
+
+.btn__up {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  display: none;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  outline: 2px solid var(--color-yellow);
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.btn__up:hover,
+.btn__up:hover .btn__up--icon {
+  transform: scale(0.85);
+}
+
+.btn__up--icon {
+  width: 40px;
+  height: 40px;
+}
