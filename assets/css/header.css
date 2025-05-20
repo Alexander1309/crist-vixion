@@ -141,7 +141,7 @@
 
 	.navbar__links {
 		width: 100%;
-		height: 1000px;
+		height: 100dvh;
 		top: 0;
 		left: 0;
 		position: fixed;
@@ -156,6 +156,7 @@
 
 	.navbar__links--active {
 		display: flex;
+		overflow: hidden;
 	}
 
 	.banner__img {
