@@ -70,3 +70,57 @@
 	line-height: 20px;
 	transition: all 0.3s ease;
 }
+
+/* Responsive tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.services {
+		padding: 0 20px;
+		margin: 10px 0;
+	}
+
+	.services__description {
+		width: 100%;
+	}
+
+	.services__card {
+		width: 150px;
+		height: 150px;
+	}
+
+	.services__grid {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.grid-servicios__card--full {
+		grid-column: auto;
+	}
+
+	.services__card--icon {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+/* Responsive móviles */
+@media (max-width: 481px) {
+	.services {
+		padding: 0 20px;
+		margin: 10px 0;
+	}
+
+	.services__title {
+		font-size: 2rem;
+	}
+
+	.services__description {
+		width: 100%;
+		font-size: 1rem;
+		line-height: 20px;
+	}
+
+	.services__grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+}

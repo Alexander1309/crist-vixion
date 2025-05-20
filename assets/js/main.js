@@ -1,6 +1,6 @@
-// Agregar clase activa al link de la navbar
-// y quitarla de los demás links
 document.addEventListener("DOMContentLoaded", function () {
+  // Agregar clase activa al link de la navbar
+  // y quitarla de los demás links
   const links = document.querySelectorAll(".navbar__link");
 
   links.forEach((link) => {
@@ -11,23 +11,35 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Btn para el scroll hacia arriba
-  const btn = document.getElementById("btn__up");
-
-  window.onscroll = function () {
+  const btnUp = document.getElementById("btn__up");
+  window.addEventListener("scroll", function () {
     if (
       document.body.scrollTop > 170 ||
       document.documentElement.scrollTop > 170
     ) {
-      btn.style.display = "block";
+      btnUp.style.display = "block";
     } else {
-      btn.style.display = "none";
+      btnUp.style.display = "none";
     }
-  };
+  });
 
-  btn.onclick = function () {
+  btnUp.addEventListener("click", function () {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-  };
+  });
+
+  // Cerrar el menú al hacer click en un link
+  // y al hacer click fuera del menú
+  const btnMenu = document.querySelector(".header__btnmenu");
+  const menu = document.querySelector(".navbar__links");
+
+  btnMenu.addEventListener("click", function () {
+    menu.classList.toggle("navbar__links--active");
+  });
+
+  menu.addEventListener("click", function () {
+    menu.classList.remove("navbar__links--active");
+  });
 });

@@ -75,3 +75,64 @@
 	font-size: 1.5rem;
 	font-weight: 300;
 }
+
+/* Responsive tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.about__content {
+		flex-direction: column;
+		gap: 30px;
+		padding: 0 20px;
+	}
+
+	.about__description {
+		width: 100%;
+	}
+
+	.about__side {
+		flex-direction: column-reverse;
+		gap: 30px;
+		margin: 20px 0;
+	}
+}
+
+/* Responsive móviles */
+@media (max-width: 481px) {
+	.about {
+		margin: 50px 0;
+	}
+
+	.about__content {
+		flex-direction: column;
+		gap: 30px;
+		padding: 0 20px;
+	}
+
+	.about__description {
+		width: 100%;
+		font-size: 1rem;
+		line-height: 20px;
+	}
+
+	.about__side {
+		flex-direction: column-reverse;
+		gap: 30px;
+		margin: 20px 0;
+	}
+
+	.about__image {
+		width: 300px;
+	}
+
+	.about__subtitle {
+		font-size: 1.2rem;
+	}
+
+	.about__text {
+		font-size: 1rem;
+		line-height: 20px;
+	}
+
+	.about__vision {
+		margin-left: -10px;
+	}
+}

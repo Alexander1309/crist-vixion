@@ -46,3 +46,33 @@
 	font-size: 2.5rem;
 	color: var(--color-white);
 }
+
+/* Responsive tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.contact {
+		margin: 50px 0;
+	}
+
+	.conatct__title {
+		font-size: 2.5rem;
+	}
+
+	.conatct__list--item--text {
+		font-size: 1.5rem;
+	}
+}
+
+/* Responsive móviles */
+@media (max-width: 481px) {
+	.contact {
+		margin: 50px 0;
+	}
+
+	.conatct__title {
+		font-size: 1.3rem;
+	}
+
+	.conatct__list--item--text {
+		font-size: 1.2rem;
+	}
+}
