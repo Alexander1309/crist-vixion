@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./assets/css/team.css">
 	<link rel="stylesheet" href="./assets/css/contact.css">
 	<link rel="stylesheet" href="./assets/css/footer.css">
+	<link rel="stylesheet" href="./assets/css/modal.css">
 	<title>Crist Vixion</title>
 </head>
 <body>
@@ -44,39 +45,39 @@
 			y potenciar su rendimiento.
 		</p>
 		<div class="services__grid">
-			<div class="services__card">
+			<div class="services__card" data-modal="1">
 				<i data-lucide="microscope" class="services__card--icon"></i>
 				<p class="services__card--text">Examen Visual</p>
 			</div>
-			<div class="services__card">
+			<div class="services__card" data-modal="2">
 				<i data-lucide="glasses" class="services__card--icon"></i>
 				<p class="services__card--text">Asesoría Óptica</p>
 			</div>
-			<div class="services__card">
+			<div class="services__card" data-modal="3">
 				<i data-lucide="shield-half" class="services__card--icon"></i>
 				<p class="services__card--text">Lentes Industriales</p>
 			</div>
-			<div class="services__card">
+			<div class="services__card" data-modal="4">
 				<i data-lucide="lightbulb" class="services__card--icon"></i>
 				<p class="services__card--text">Lentes Con Filtro</p>
 			</div>
-			<div class="services__card">
+			<div class="services__card" data-modal="5">
 				<i data-lucide="brain" class="services__card--icon"></i>
 				<p class="services__card--text">Charlas Educativas</p>
 			</div>
-			<div class="services__card">
+			<div class="services__card" data-modal="6">
 				<i data-lucide="handshake" class="services__card--icon"></i>
 				<p class="services__card--text">Programas Empresariales</p>
 			</div>
-			<div class="services__card">
+			<div class="services__card" data-modal="7">
 				<i data-lucide="life-buoy" class="services__card--icon"></i>
 				<p class="services__card--text">Seguimiento Visual</p>
 			</div>
-			<div class="services__card">
+			<div class="services__card" data-modal="8">
 				<i data-lucide="tags" class="services__card--icon"></i>
 				<p class="services__card--text">Descuentos Exclusivos</p>
 			</div>
-			<div class="services__card grid-servicios__card--full">
+			<div class="services__card grid-servicios__card--full" data-modal="9">
 				<i data-lucide="lock" class="services__card--icon"></i>
 				<p class="services__card--text">Seguro Anual Opcional</p>
 			</div>
@@ -177,6 +178,7 @@
 		</div>
 	</section>
 
+	<!-- Footer  -->
 	<footer class="footer">
 		<div class="footer__logo">
 			<img src="./assets/img/logo.svg" alt="Logo Crist Vixion" class="footer__logo--img">
@@ -196,12 +198,33 @@
 		</div>
 	</footer>
 
+	<!-- Btn Up  -->
 	<button class="btn__up" id="btn__up">
 		<i class="btn__up--icon"  data-lucide="arrow-big-up-dash"></i>
 	</button>
 
+	<!-- Modal  -->
+	<div id="modal__services" class="modal">
+		<span class="modal__btn-close" id="modal__btn-close">&times;</span>
+    <div class="modal__content">
+			<div class="modal__card">
+				<div class="modal__card__header">
+					<i id="modal__icon" data-lucide="microscope" class="modal__card__header__icon"></i>
+					<p id="modal__title" class="modal__card__header__title">Examen Visual</p>
+				</div>
+				<div class="modal__card__body">
+					<p class="modal__card__body__text" id="modal__text">Evalúa tu salud ocular de forma precisa y profesional. Nuestro examen visual detecta alteraciones en la visión, fatiga ocular y necesidades correctivas, garantizando una atención personalizada y confiable.</p>
+				</div>
+				<div class="modal__card__footer">
+					<a href="https://www.whatsapp.com/catalog/5218128840374" target="_blank" class="modal__card__footer__link">Solicitar Cita</a>
+				</div>
+    	</div>
+		</div>
+	</div>
+
 	<script src="https://unpkg.com/lucide@latest"></script>
 	<script>lucide.createIcons()</script>
+	<script src="./assets/js/services.data.js"></script>
 	<script src="./assets/js/main.js"></script>
 </body>
 </html>

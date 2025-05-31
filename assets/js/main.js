@@ -42,4 +42,30 @@ document.addEventListener("DOMContentLoaded", function () {
   menu.addEventListener("click", function () {
     menu.classList.remove("navbar__links--active");
   });
+
+  //Open modal
+  const modal = document.querySelector("#modal__services");
+  const btnModalClose = document.querySelector("#modal__btn-close");
+  const btnModalOpen = document.querySelectorAll(".services__card");
+
+  btnModalOpen.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const index = parseInt(btn.dataset.modal) - 1;
+      const modalIcon = document.querySelector("#modal__icon");
+      const modalTitle = document.querySelector("#modal__title");
+      const modalDescription = document.querySelector("#modal__text");
+      const service = services[index];
+
+      modalIcon.dataset.lucide = service.icon;
+      modalTitle.textContent = service.title;
+      modalDescription.textContent = service.description;
+      lucide.createIcons();
+
+      modal.style.display = "block";
+    });
+  });
+
+  btnModalClose.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
 });
