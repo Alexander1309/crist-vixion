@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Video Loader
+  const videoLoader = document.getElementById("videoLoader");
+  const bannerVideo = document.querySelector(".banner__img");
+
+  if (bannerVideo) {
+    // Ocultar loader cuando el video esté listo
+    bannerVideo.addEventListener("loadeddata", function () {
+      setTimeout(() => {
+        videoLoader.classList.add("hidden");
+      }, 500);
+    });
+
+    // Fallback: ocultar loader después de 3 segundos si el video no carga
+    setTimeout(() => {
+      if (!videoLoader.classList.contains("hidden")) {
+        videoLoader.classList.add("hidden");
+      }
+    }, 3000);
+  }
+
   // Agregar clase activa al link de la navbar
   // y quitarla de los demás links
   const links = document.querySelectorAll(".navbar__link");
