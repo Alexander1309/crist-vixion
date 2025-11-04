@@ -12,7 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Btn para el scroll hacia arriba
   const btnUp = document.getElementById("btn__up");
+  const navbar = document.querySelector(".navbar");
+
   window.addEventListener("scroll", function () {
+    // Botón scroll to top
     if (
       document.body.scrollTop > 170 ||
       document.documentElement.scrollTop > 170
@@ -20,6 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
       btnUp.style.display = "block";
     } else {
       btnUp.style.display = "none";
+    }
+
+    // Navbar sticky
+    if (window.scrollY > 100) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
     }
   });
 
